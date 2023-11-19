@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hi, I'm Aditya Raj</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/assets/img/personal/ph5.png" rel="icon">
+  <link href="/assets/img/personal/ph5.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      /* Set a background color for better visibility */
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      /* top: 50; */
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Style for the modal content */
+    .modal-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      max-width: 70%;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Style for the close button */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      /* Adjust the gap between grid items */
+      padding: 20px;
+    }
+
+    .grid-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(52, 152, 219, 0.8);
+      /* Semi-transparent overlay color */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(100%);
+      /* Initial position off-screen */
+      transition: opacity 0.3s, transform 0.5s;
+    }
+
+    .grid-item:hover .overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .overlay-text {
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <span>Aditya Raj</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="getstarted scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="/assets/img/personal/ph4.png" style="width: 500px; border-radius: 500px; border: #444444 solid 2px; margin-right: 15px; height: 500px; object-fit: cover;" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Hi, I'm Aditya Raj</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">React Native Developer</h2>
+          <h4 style="margin-top: 20px;" data-aos="fade-up" data-aos-delay="400">I love making mobile applications and
+            solving problems through my skills and experiences that I have. Also I like reading books related to
+            self-help, problem-solving, money and science.</h4>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#about"
+                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>See More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Learn More</h3>
+              <h2>Who is Aditya Raj?</h2>
+              <p>
+                I'm an tech enthusiast as well as science enthusiast, who loves to solve problems in very easy and
+                simple manner. I just love reading books and gaining knowledge from all the best sources across the web
+                and world. Also I like the technical stuff like programming and my favorite mobile application building.
+                I Also like science as well very much as it opens my brains I just can't resist to it, because it
+                teaches me a lot of things about life and history.
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="#"
+                  class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Read More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/personal/ph2.png" style="border: 2px solid #444444;" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Skills</h2>
+          <p>What I love to do?</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="assets/img/features.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Java</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Javascript</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Python</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>React</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>React Native</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Node.js</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div> <!-- / row -->
+
+      </div>
+
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Services</h2>
+          <p>What I Offer?</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="icon"><img src="/assets/img/structure.png" height="30px" /></i>
+              <h3>React Native App Development</h3>
+              <p>I will build hybrid mobile apps with react native which runs on ios and android both platforms.</p>
+              <a href="#contact" class="read-more"><span>Contact Me</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box green">
+              <i class="icon"><img src="/assets/img/technology.png" height="30px" /></i>
+              <h3>Android App Development</h3>
+              <p>I will build android apps with java which runs on android only.</p>
+              <a href="#contact" class="read-more"><span>Contact Me</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box orange">
+              <i class="icon"><img src="/assets/img/globe.png" height="30px" /></i>
+              <h3>Web Development</h3>
+              <p>I will create fullstack websites with React and Node.js</p>
+              <a href="#contact" class="read-more"><span>Contact Me</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          
+          <img style="height: 150px; width: 150px; align-self: center;" src="/assets/img/portfolio/elearn/icon.png" />
+          <span class="close"
+            style="width: 30px; background-color:  #e4e4e4; margin-top: 100px; height: 30px; border-radius: 100px; align-items: center; justify-content: center; text-align: center; cursor: pointer;"
+            id="closeModal">&times;</span>
+          <h2>About Elearn</h2>
+          <p>Elearn is an audio book and ebook app which provides user ccess to audio book and ebooks for free. Since we
+            do not have any resources of audio and ebook, app just contains sample audios and ebook.</p>
+         
+            <div style="width: 100%; overflow-x: auto; white-space: nowrap; margin-top: 20px;">
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/elearn/e1.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+              <img src="/assets/img/portfolio/elearn/e2.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+              <img src="/assets/img/portfolio/elearn/e3.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+              <img src="/assets/img/portfolio/elearn/e4.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+              <img src="/assets/img/portfolio/elearn/e5.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+              <img src="/assets/img/portfolio/elearn/e6.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+              <img src="/assets/img/portfolio/elearn/e7.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="chatModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <img style="height: 150px; width: 150px; align-self: center;" src="/assets/img/portfolio/chatwave/icon.png" />
+          <span class="close"
+            style="width: 30px; background-color: #e4e4e4;margin-top: 100px; height: 30px; border-radius: 100px; align-items: center; justify-content: center; text-align: center; cursor: pointer;"
+            id="closeChatModal">&times;</span>
+          <h2>About Chatwave</h2>
+          <p>Chatwave is an unique chatting application where you can find any users and chat with them. A unique way to
+            connect with users.</p>
+            <div style="width: 100%; overflow-x: auto; white-space: nowrap; margin-top: 20px;">
+              <!-- Add your photos here with each image in a separate container -->
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c1.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c2.jpg"
+                  style="width: 200px; border-radius:  5px;height: 400px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c3.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c4.jpg"
+                  style="width: 200px; border-radius:  5px;height: 400px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c5.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c6.jpg"
+                  style="width: 200px; border-radius:  5px;height: 400px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c7.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c8.jpg"
+                  style="width: 200px; border-radius:  5px;height: 400px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c9.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c10.jpg"
+                  style="width: 200px; border-radius:  5px;height: 400px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c11.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c12.jpg"
+                  style="width: 200px; border-radius:  5px;height: 400px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c13.jpg"
+                  style="width: 200px; height: 400px; border-radius: 5px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c14.jpg"
+                  style="width: 200px; border-radius:  5px;height: 400px; object-fit: cover;">
+              </div>
+              <div style="display: inline-block; margin-right: 10px;">
+                <img src="/assets/img/portfolio/chatwave/c15.jpg"
+                  style="width: 200px; border-radius:  5px;height: 400px; object-fit: cover;">
+              </div>
+              
+            </div>
+  
+        </div>
+
+      </div>
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Portfolio</h2>
+          <p>Check my recent works</p>
+        </header>
+        <!-- 
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <h3 style="text-align: center; color: #4654F1;">Projects will be Added Soon!</h3>
+
+        </div> -->
+        <div class="grid-container">
+          <div class="grid-item" style="height: fit-content;">
+            <img src="/assets/img/portfolio/elearn.png" alt="Project 1">
+            <div class="overlay">
+              <div class="overlay-text"><a href="#portfolio" id="openModal"
+                  style="color: #fff; background-color: rgb(0, 0, 0); padding: 10px; border-radius: 5px;">See More</a>
+              </div>
+              <div class="overlay-text"><a target="_blank" href="https://drive.google.com/file/d/19Z7Xm_RQj_4jf0sbIbMaPlWGf68flWRY/view?usp=sharing"
+                  style="color: #fff; background-color: rgb(0, 0, 0); padding: 10px; border-radius: 5px; margin-left: 10px;">Download
+                  Apk</a></div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="/assets/img/portfolio/chatwave.png" alt="Project 2">
+            <div class="overlay">
+              <div class="overlay-text"><a id="openChatModal" href="#portfolio"
+                  style="color: #fff; background-color: rgb(0, 0, 0); padding: 10px; border-radius: 5px;">See More</a>
+              </div>
+              <div class="overlay-text"><a target="_blank" href="https://drive.google.com/file/d/1yQB4Y6a2q-Dhkp9xPSnB_WHxwP8pMgcM/view?usp=sharing"
+                  style="color: #fff; background-color: rgb(0, 0, 0); padding: 10px; border-radius: 5px; margin-left: 10px;">Download
+                  Apk</a></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Contact Me</p>
+        </header>
+
+        <div class="row gy-4 d-flex justify-content-center align-items-center">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>Nagpur, <br> Maharashtra - 440006, <br> India</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Me</h3>
+                  <p><a style="color: #444444;" href="mailto:ar1364713@gmail.com">ar1364713@gmail.com</a><br><a
+                      style="color: #444444;" href="mailto:ar1364713@gmail.com">adityaraj.io.business@gmail.com</a></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Not Available</h3>
+                  <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>Aditya Raj</span>
+            </a>
+            <p>Want to get Ahead of 99% people. Start it by learning new things.</p>
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/AdityaRaj1364" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.instagram.com/adityaraj_io/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://github.com/adityaraj-io" class="linkedin"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#services">Services</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">React Native Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Android App Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Web Development</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              Nagpur <br>
+              Maharashtra - 440006<br>
+              India <br><br>
+              <strong>Email:</strong> <a style="color: grey;"
+                href="mailto:ar1364713@gmail.com">ar1364713@gmail.com</a><br>
+              <a style="color: gray;" href="mailto:ar1364713@gmail.com">adityaraj.io.business@gmail.com</a>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Get the modal element
+    var modal = document.getElementById("myModal");
+
+    // Get the anchor tag that opens the modal
+    var openModalLink = document.getElementById("openModal");
+
+    // Get the button element to close the modal
+    var closeModalBtn = document.getElementById("closeModal");
+
+    // When the user clicks the anchor tag, open the modal
+    openModalLink.onclick = function () {
+      modal.style.display = "flex";
+    }
+
+    // When the user clicks the close button, close the modal
+    closeModalBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal||modal1) {
+        modal1.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    // Get the modal element
+    var modal1 = document.getElementById("chatModal");
+
+    // Get the anchor tag that opens the modal
+    var openModalLink1 = document.getElementById("openChatModal");
+
+    // Get the button element to close the modal
+    var closeModalBtn1 = document.getElementById("closeChatModal");
+
+    // When the user clicks the anchor tag, open the modal
+    openModalLink1.onclick = function () {
+      modal1.style.display = "flex";
+    }
+
+    // When the user clicks the close button, close the modal
+    closeModalBtn1.onclick = function () {
+      modal1.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
